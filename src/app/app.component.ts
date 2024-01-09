@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TP1';
+  title = 'TP ANGULAR';
+
+  counterValue = 0;
+
+  incrementCounter() {
+    this.counterValue++;
+  }
+
+}
+
+interface Voiture {
+  id: number
+  marque: string
+  modele: string
 }
